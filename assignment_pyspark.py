@@ -35,3 +35,7 @@ def cal_lat_log_dist(self, df, lat1, long1, lat2, long2):
 df_distance = cal_lat_log_dist(df_input, "Latitude", "Longitude", 0, 0)
 df_distance.write.csv("/Users/saurabhkumar/Desktop/SQL/task-6")
 
+#Task 8
+# Included the final csv in the repository.
+
+
