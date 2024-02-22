@@ -12,8 +12,6 @@ df_input = spark.read.csv('/Users/saurabhkumar/Desktop/SQL/database.csv', header
 #Task 2
 df_ts = df_input.withColumn("Timestamp",F.to_timestamp(F.concat(F.col("Date"), F.lit(" "), F.col("Time")))
 df_ts.write.csv("/Users/saurabhkumar/Desktop/SQL/task-2")
-df.withColumn("Timestamp",to_timestamp(concat(col("Date"),col("Time")),"dd/mm/yyyyHH:mm:ss")).show
-
 
 #Task 3
 df_magnitude = df_input.where(df_input.Magnitude > 5.0)
